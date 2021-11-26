@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Side bar</title>
+</head>
+<style>
+body{
+margin: 0;
+padding: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: lightgrey;
+}
+.navbar{
+position: absolute;
+right: 0px;
+width: 250px;
+height: 100%;
+background-color: black;
+text-align: center;
+transition: 0.800s ease;
+}
+.navbar > .side-nav{
+
+  list-style-type: none;
+  padding: 0%;
+  margin: 0%;
+
+}
+.nav-item{
+  display: flex;
+}
+.nav-item > .nav-link {
+text-decoration: none;
+color: whitesmoke;
+font-size: 1.1em;
+padding: 1em;
+flex: 1;
+
+}
+.nav-link > .nav-link :hover{
+background-color: whitesmoke;
+ color: black;
+}
+.toggle-collapse{
+float: left;
+margin-left: -3.3em;
+margin-top: .5em;
+content: inherit;
+border: 0px;
+background: transparent;
+}
+.toggle-icon,
+.toggle-icon ::before,
+.toggle-icon ::after{
+content: "";
+width: 60px;
+height: 3px;
+position: fixed;
+background-color: black;
+border-radius: 2em;
+border: 1px solid black;
+cursor: pointer;
+transition: 0.800s ease;
+margin-top: 0.8em;
+}
+.toggle-icon::before{
+  position: absolute;
+left: -1px;
+margin-top: -0.8em;
+
+}
+
+.toggle-icon ::after{
+position: absolute;
+left: -1px;
+margin-top: 0.6em;
+width: 20px;
+
+}
+
+
+.toggle-icon{
+  width: 100px;
+}
+.show .toggle-icon{
+
+  width: 30px;
+}
+.nav-item > .side-name{
+text-decoration: none;
+padding: 1.3em;
+font-size: 2em;
+color: whitesmoke;
+
+}
+
+
+
+</style>
+<body>
+<div class="container">
+<nav class="navbar" id="navId">
+<button type="button" class="toggle-collapse" id="toggle-button" onclick="myFunc(this)">pres
+  <span class="toggle-icon"></span>
+</button>
+<ul class="side-nav">
+<li class="nav-item">
+<a href="#" class="side-name">Dailt tuition</a>
+</li>
+<li class="nav-item"> 
+<a href="#" class="nav-link">Home</a>
+</li> 
+<li class="nav-item"> 
+  <a href="#" class="nav-link">Blog</a>
+  </li> 
+  <li class="nav-item"> 
+    <a href="#" class="nav-link">Fetures</a>
+    </li> 
+    <li class="nav-item"> 
+      <a href="#" class="nav-link">pricing</a>
+      </li>
+    <li class="nav-item"> 
+      <a href="#" class="nav-link">Contact us</a>
+      </li> 
+            
+
+
+
+</ul>
+
+</nav>
+</div>  
+<script>
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
